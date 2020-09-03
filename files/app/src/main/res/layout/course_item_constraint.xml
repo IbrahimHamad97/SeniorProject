@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/tv_crs_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="38dp"
+        android:text="PHCODE"
+        app:layout_constraintEnd_toStartOf="@+id/tv_crs_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_crs_title" />
+
+    <TextView
+        android:id="@+id/tv_crs_section"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PHSECT"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_crs_instructor"
+        app:layout_constraintStart_toStartOf="@+id/tv_crs_code" />
+
+    <TextView
+        android:id="@+id/tv_crs_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="73dp"
+        android:gravity="center"
+        android:text="PLACEHOLDERCOURSE"
+        app:layout_constraintEnd_toStartOf="@+id/iv_time"
+        app:layout_constraintStart_toEndOf="@+id/tv_crs_code"
+        app:layout_constraintTop_toTopOf="@+id/iv_time" />
+
+    <TextView
+        android:id="@+id/tv_crs_instructor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="DRPLACEHOLDER"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_crs_datetime"
+        app:layout_constraintEnd_toEndOf="@+id/iv_time2"
+        app:layout_constraintStart_toStartOf="@+id/iv_time2" />
+
+    <ImageView
+        android:id="@+id/iv_time"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="37dp"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_crs_datetime"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tv_crs_title"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/basic_button" />
+
+    <ImageView
+        android:id="@+id/iv_time2"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_crs_instructor"
+        app:layout_constraintEnd_toEndOf="@+id/tv_crs_title"
+        app:layout_constraintStart_toStartOf="@+id/tv_crs_title"
+        app:layout_constraintTop_toBottomOf="@+id/tv_crs_title"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/basic_button" />
+
+    <TextView
+        android:id="@+id/tv_crs_datetime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="633dp"
+        android:text="PHTIME"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/iv_time"
+        app:layout_constraintHorizontal_bias="0.659"
+        app:layout_constraintStart_toStartOf="@+id/iv_time"
+        app:layout_constraintTop_toBottomOf="@+id/iv_time" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

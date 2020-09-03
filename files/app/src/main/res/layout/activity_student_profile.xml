@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.StudentProfileActivity">
+
+
+    <ImageView
+        android:id="@+id/iv_stdnt_col"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/basic_button" />
+
+    <LinearLayout
+        android:id="@+id/ll_stdnt_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginStart="20dp"
+        android:background="@drawable/white_bg"
+        android:orientation="horizontal"
+        android:paddingVertical="@dimen/ll_tvs_stdnt_vpad"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/iv_stdnt_col"
+        app:layout_constraintTop_toTopOf="@+id/iv_stdnt_col">
+
+        <TextView
+            android:id="@+id/lbl_stdnt_name"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Name"
+            android:textSize="@dimen/prof_lbl_txt_size"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_stdnt_name"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="6"
+            android:paddingHorizontal="5dp"
+            android:gravity="center_vertical"
+            android:text="Name"
+            android:textSize="@dimen/prof_tv_txt_size" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_stdnt_quid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/white_bg"
+        android:orientation="horizontal"
+        android:paddingVertical="@dimen/ll_tvs_stdnt_vpad"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_stdnt_col"
+        app:layout_constraintEnd_toEndOf="@+id/ll_stdnt_name"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/ll_stdnt_name"
+        app:layout_constraintTop_toBottomOf="@+id/ll_stdnt_name"
+        app:layout_constraintVertical_bias="1.0">
+
+        <TextView
+            android:id="@+id/lbl_stdnt_id"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="QUID"
+            android:textSize="@dimen/prof_lbl_txt_size"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="188dp"
+            tools:layout_editor_absoluteY="61dp" />
+
+        <TextView
+            android:id="@+id/tv_stdnt_id"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="6"
+            android:gravity="center_vertical"
+            android:paddingHorizontal="5dp"
+            android:text="QUID"
+            android:textSize="@dimen/prof_tv_txt_size"
+            tools:layout_editor_absoluteX="254dp"
+            tools:layout_editor_absoluteY="67dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_stdnt_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/ll_margin_hor"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/white_bg"
+        android:orientation="horizontal"
+        android:paddingVertical="@dimen/ll_tvs_stdnt_vpad"
+        app:layout_constraintEnd_toEndOf="@+id/ll_stdnt_quid"
+        app:layout_constraintStart_toStartOf="@+id/iv_stdnt_col"
+        app:layout_constraintTop_toBottomOf="@+id/iv_stdnt_col">
+
+        <TextView
+            android:id="@+id/lbl_stdnt_email"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Email"
+            android:textSize="@dimen/prof_lbl_txt_size"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="188dp"
+            tools:layout_editor_absoluteY="89dp" />
+
+
+        <TextView
+            android:id="@+id/tv_stdnt_email"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="6"
+            android:gravity="center_vertical"
+            android:text="Email"
+            android:textSize="@dimen/prof_tv_txt_size"
+            tools:layout_editor_absoluteX="259dp"
+            tools:layout_editor_absoluteY="95dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_stdnt_major"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/ll_margin_hor"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/white_bg"
+        android:orientation="horizontal"
+        android:paddingVertical="@dimen/ll_tvs_stdnt_vpad"
+        app:layout_constraintEnd_toEndOf="@+id/ll_stdnt_email"
+        app:layout_constraintStart_toStartOf="@+id/ll_stdnt_email"
+        app:layout_constraintTop_toBottomOf="@+id/ll_stdnt_email">
+
+        <TextView
+            android:id="@+id/lbl_stdnt_major"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Major"
+            android:textSize="@dimen/prof_lbl_txt_size"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="164dp" />
+
+        <TextView
+            android:id="@+id/tv_stdnt_major"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="6"
+            android:gravity="center_vertical"
+            android:text="Major"
+            android:textSize="@dimen/prof_tv_txt_size"
+            tools:layout_editor_absoluteX="89dp"
+            tools:layout_editor_absoluteY="170dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_stdnt_minor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/ll_margin_hor"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/white_bg"
+        android:orientation="horizontal"
+        android:paddingVertical="@dimen/ll_tvs_stdnt_vpad"
+        app:layout_constraintEnd_toEndOf="@+id/ll_stdnt_major"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/ll_stdnt_major"
+        app:layout_constraintTop_toBottomOf="@+id/ll_stdnt_major">
+
+        <TextView
+            android:id="@+id/lbl_stdnt_minor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Minor"
+            android:textSize="@dimen/prof_lbl_txt_size"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="215dp" />
+
+        <TextView
+            android:id="@+id/tv_stdnt_minor"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="6"
+            android:gravity="center_vertical"
+            android:text="Minor"
+            android:textSize="@dimen/prof_tv_txt_size"
+            tools:layout_editor_absoluteX="90dp"
+            tools:layout_editor_absoluteY="221dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_stdnt_GPA"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/ll_margin_hor"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/white_bg"
+        android:orientation="horizontal"
+        android:paddingVertical="@dimen/ll_tvs_stdnt_vpad"
+        app:layout_constraintEnd_toEndOf="@+id/ll_stdnt_minor"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/ll_stdnt_minor"
+        app:layout_constraintTop_toBottomOf="@+id/ll_stdnt_minor">
+
+        <TextView
+            android:id="@+id/lbl_stdnt_gpa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="GPA"
+            android:textSize="@dimen/prof_lbl_txt_size"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="266dp" />
+
+        <TextView
+            android:id="@+id/tv_stdnt_gpa"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="6"
+            android:gravity="center_vertical"
+            android:text="GPA"
+            android:textSize="@dimen/prof_tv_txt_size"
+            tools:layout_editor_absoluteX="76dp"
+            tools:layout_editor_absoluteY="272dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_stdnt_reg_year"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/ll_margin_hor"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/white_bg"
+        android:paddingVertical="@dimen/ll_tvs_stdnt_vpad"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="@+id/ll_stdnt_GPA"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/ll_stdnt_GPA"
+        app:layout_constraintTop_toBottomOf="@+id/ll_stdnt_GPA">
+
+        <TextView
+            android:id="@+id/lbl_stdnt_reg_year"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Enrolled Year"
+            android:textSize="@dimen/prof_lbl_txt_size"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="317dp" />
+
+        <TextView
+            android:id="@+id/tv_stdnt_reg_year"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="6"
+            android:gravity="center_vertical"
+            android:text="Registered Year"
+            android:textSize="@dimen/prof_tv_txt_size"
+            tools:layout_editor_absoluteX="182dp"
+            tools:layout_editor_absoluteY="323dp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

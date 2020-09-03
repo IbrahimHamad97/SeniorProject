@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".view.ScheduleActivity">
+
+    <TextView
+        android:id="@+id/lbl_header_current_week"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="Weekly Schedule FALLPH"
+        android:background="@color/colorPrimary"
+        android:layout_marginVertical="5dp"
+        android:gravity="center"/>
+
+    <TableLayout
+        android:id="@+id/tl_schedule"
+        android:layout_weight="2"
+        android:layout_width="410dp"
+        android:layout_height="595dp"
+        android:paddingHorizontal="2dp"
+        android:stretchColumns="0,1,2,3,4,5">
+
+        <TableRow
+            android:id="@+id/tr_header"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimary"
+            >
+
+            <TextView
+                android:id="@+id/tc_header_start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:textStyle="bold"
+                android:text="Times" />
+
+            <TextView
+                android:id="@+id/tc_header_sun"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_margin="5dp"
+                android:text="Sun" />
+
+            <TextView
+                android:id="@+id/tc_header_mon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_margin="5dp"
+                android:text="Mon" />
+
+            <TextView
+                android:id="@+id/tc_header_tue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_margin="5dp"
+                android:text="Tue" />
+
+            <TextView
+                android:id="@+id/tc_header_wed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_margin="5dp"
+                android:text="Wed" />
+
+            <TextView
+                android:id="@+id/tr_header_thu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_margin="5dp"
+                android:text="Thu" />
+        </TableRow>
+
+    </TableLayout>
+
+</LinearLayout>

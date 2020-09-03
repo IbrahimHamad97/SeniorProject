@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="mm_icon_size">100dp</dimen>
+    <dimen name="courseInfo_row_margin">10dp</dimen>
+    <dimen name="crs_item_icon_w">100dp</dimen>
+    <dimen name="crs_item_icon_h">50dp</dimen>
+    <dimen name="crs_item_sq">30dp</dimen>
+    <dimen name="crs_item_btn_margin">10dp</dimen>
+    <dimen name="crs_info_tbl_row_pad">5dp</dimen>
+    <dimen name="prof_lbl_txt_size">20sp</dimen>
+    <dimen name="prof_tv_txt_size">15sp</dimen>
+    <dimen name="margin_stdnt_prof_label_value">20dp</dimen>
+    <dimen name="crs_item_lbl">15sp</dimen>
+    <dimen name="tr_pad_crs_list">0dp</dimen>
+    <dimen name="LinLay_tvs_width">230dp</dimen>
+    <dimen name="ll_margin_hor">20dp</dimen>
+    <dimen name="ll_tvs_stdnt_vpad">2dp</dimen>
+    <dimen name="hd_tv_vpad">10dp</dimen>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+</resources>

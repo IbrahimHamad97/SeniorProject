@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cl_holds_dialog"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingHorizontal="20dp"
+    android:paddingBottom="24dp"
+    android:background="#ECECEC">
+
+    <LinearLayout
+        android:id="@+id/ll_hd_reason"
+        android:layout_width="331dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/white_bg"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/hd_lbl_reason"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingVertical="@dimen/hd_tv_vpad"
+            android:gravity="center"
+            android:text="Reason" />
+
+        <TextView
+            android:id="@+id/hd_tv_reason"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="6"
+            android:paddingVertical="@dimen/hd_tv_vpad"
+            android:text="reason" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_hd_originator"
+        android:layout_width="331dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/white_bg"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="@+id/ll_hd_reason"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/ll_hd_reason"
+        app:layout_constraintTop_toBottomOf="@+id/ll_hd_reason">
+
+        <TextView
+            android:id="@+id/hd_lbl_originator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingVertical="@dimen/hd_tv_vpad"
+            android:gravity="center"
+            android:text="Originator" />
+
+        <TextView
+            android:id="@+id/hd_tv_originator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="6"
+            android:paddingVertical="@dimen/hd_tv_vpad"
+            android:text="originator" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_hd_date"
+        android:layout_width="331dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/white_bg"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="@+id/ll_hd_originator"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/ll_hd_originator"
+        app:layout_constraintTop_toBottomOf="@+id/ll_hd_originator">
+
+        <TextView
+            android:id="@+id/hd_lbl_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingVertical="@dimen/hd_tv_vpad"
+            android:gravity="center"
+            android:text="Received Date" />
+
+        <TextView
+            android:id="@+id/hd_tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="6"
+            android:paddingVertical="@dimen/hd_tv_vpad"
+            android:text="date" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/hd_btn_dialog_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/basic_button"
+        android:text="CLOSE"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ll_hd_date" />
+</androidx.constraintlayout.widget.ConstraintLayout>

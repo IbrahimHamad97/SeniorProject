@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">Course Registration</string>
+    <string name="log_out">Log out</string>
+    <string name="enrolled_year">Enrolled Year</string>
+    <string name="name">Name</string>
+    <string name="quid">QUID</string>
+    <string name="plan">Plan</string>
+    <string name="smart_advisor_header_ph">Your GPA is\n %s [%s]\n Recommended Courses</string>
+    <string name="holds_for_semester">Holds</string>
+    <string name="code_ph">%s</string>
+    <string name="sect_ph">%s</string>
+    <string name="crn_ph">C%s</string>
+    <string name="credit_hours_ph">%dH</string>
+    <string name="course_ph">%s</string>
+    <string name="instructor_ph">%s</string>
+    <string name="confirm_changes">Confirm Changes</string>
+    <string name="gender_ph">GENDER: %s</string>
+    <string name="active_ph">ACTIVE: %d</string>
+    <string name="cap_ph">CAP: %d</string>
+    <string name="total_credit_hours_ph">Total Credit Hours: %d</string>
+    <string name="semester_ph">%s %d</string>
+    <string-array name="semester_list">
+        <item>Fall 2020</item>
+        <item>Spring 2020</item>
+        <item>Fall 2019</item>
+        <item>Spring 2019</item>
+        <item>Fall 2018</item>
+        <item>Spring 2018</item>
+    </string-array>
+    <string name="title_activity_login">Sign in</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="reg_course">Register Course</string>
+    <string name="mybanner_link">https://mybanner.qu.edu.qa</string>
+    <string name="myid_qu_link">http://myid.qu.edu.qa</string>
+</resources>

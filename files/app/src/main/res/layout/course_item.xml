@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/white_bg"
+    android:layout_marginHorizontal="10dp"
+    android:paddingVertical="10dp">
+
+    <LinearLayout
+        android:layout_weight="2.2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_crs_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="@dimen/crs_item_lbl"
+            android:text="@string/code_ph" />
+
+        <TextView
+            android:id="@+id/tv_crs_section"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="@dimen/crs_item_lbl"
+            android:text="@string/sect_ph"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_item_crn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="@dimen/crs_item_lbl"
+            android:layout_weight="1"
+            android:text="@string/crn_ph" />
+
+        <TextView
+            android:id="@+id/tv_credit_hours"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="@dimen/crs_item_lbl"
+            android:text="@string/credit_hours_ph"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="1.5"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_crs_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/course_ph"
+            android:gravity="center"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="@dimen/crs_item_icon_w"
+                android:layout_height="@dimen/crs_item_icon_h"
+                android:layout_weight="2"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/personicon" />
+
+            <TextView
+                android:id="@+id/tv_crs_instructor"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/instructor_ph"
+                android:gravity="center"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/timeicon" />
+
+        <TextView
+            android:id="@+id/tv_crs_datetime"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_weight="4"
+            android:text="TIMEPH" />
+
+    </LinearLayout>
+
+    <!--
+    <LinearLayout
+        android:layout_weight="2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <Button
+            android:id="@+id/btn_course_item_alt"
+            android:layout_margin="@dimen/crs_item_btn_margin"
+            android:layout_width="@dimen/crs_item_sq"
+            android:layout_height="@dimen/crs_item_sq"
+            android:layout_weight="1"
+            android:background="@drawable/c_edit"
+            android:layout_gravity="center"/>
+
+        <Button
+            android:id="@+id/btn_course_item_info"
+            android:layout_margin="@dimen/crs_item_btn_margin"
+            android:layout_width="@dimen/crs_item_sq"
+            android:layout_height="@dimen/crs_item_sq"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:background="@drawable/c_info"/>
+
+
+    </LinearLayout>
+    -->
+</LinearLayout>

@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginBottom="10dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/tl_course_item"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="@drawable/white_bg">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="50dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_crs_section"
+            app:srcCompat="@drawable/timeicon" />
+
+        <TextView
+            android:id="@+id/tv_crs_instructor"
+            android:layout_width="0dp"
+            android:layout_height="25dp"
+            android:ellipsize="none"
+            android:gravity="center"
+            android:maxLines="100"
+            android:text="101"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_credit_hours"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tv_credit_hours" />
+
+        <TextView
+            android:id="@+id/codeTV7"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="INSTRUCTORS"
+            android:textSize="@dimen/crs_item_lbl"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/tv_crs_instructor"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/codeTV4" />
+
+        <TextView
+            android:id="@+id/tv_crs_title"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:text="101"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/codeTV7"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/tv_item_crn"
+            app:layout_constraintTop_toBottomOf="@+id/tv_issues"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/tv_item_crn"
+            android:layout_width="70dp"
+            android:layout_height="36dp"
+            android:gravity="center"
+            android:text="101"
+            android:textSize="15sp"
+            app:layout_constraintStart_toEndOf="@+id/tv_crs_code"
+            app:layout_constraintTop_toBottomOf="@+id/codeTV5" />
+
+        <TextView
+            android:id="@+id/tv_credit_hours"
+            android:layout_width="70dp"
+            android:layout_height="36dp"
+            android:gravity="center"
+            android:text="101"
+            android:textSize="15sp"
+            app:layout_constraintStart_toEndOf="@+id/tv_crs_section"
+            app:layout_constraintTop_toBottomOf="@+id/codeTV4" />
+
+        <TextView
+            android:id="@+id/codeTV4"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="CH"
+            android:textSize="@dimen/crs_item_lbl"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/codeTV3"
+            app:layout_constraintTop_toBottomOf="@+id/tv_item_crn" />
+
+        <TextView
+            android:id="@+id/codeTV5"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="CRN"
+            android:textSize="@dimen/crs_item_lbl"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/codeTV"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout3" />
+
+        <TextView
+            android:id="@+id/tv_crs_section"
+            android:layout_width="50dp"
+            android:layout_height="36dp"
+            android:gravity="center"
+            android:text="101"
+            android:textSize="15sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/codeTV3" />
+
+        <TextView
+            android:id="@+id/codeTV3"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="SECT"
+            android:textSize="@dimen/crs_item_lbl"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_crs_code" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="0dp"
+            android:layout_height="21dp"
+            android:background="@color/colorPrimary"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/tv_gender"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/gender_ph"
+                android:textColor="@color/colorText" />
+
+            <TextView
+                android:id="@+id/tv_active"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/active_ph"
+                android:textColor="@color/colorText" />
+
+            <TextView
+                android:id="@+id/tv_rem"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/cap_ph"
+                android:textColor="@color/colorText" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/codeTV"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="CODE"
+            android:textSize="@dimen/crs_item_lbl"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout3" />
+
+        <TextView
+            android:id="@+id/tv_crs_code"
+            android:layout_width="50dp"
+            android:layout_height="36dp"
+            android:gravity="center"
+            android:text="101"
+            android:textSize="15sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/codeTV" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="25dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="@+id/codeTV7"
+            app:layout_constraintStart_toEndOf="@+id/codeTV4"
+            app:layout_constraintTop_toBottomOf="@+id/tv_crs_title"
+            app:srcCompat="@drawable/personicon" />
+
+        <LinearLayout
+            android:id="@+id/ll_dates"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageView2"
+            app:layout_constraintTop_toBottomOf="@+id/tv_crs_instructor" />
+
+        <TextView
+            android:id="@+id/tv_issues"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/codeTV5"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout3" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TableLayout
+        android:id="@+id/tl_course_item_actions"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#EFEFEF"
+        android:padding="10dp">
+
+        <TableRow
+            android:id="@+id/tr_show_course"
+            android:background="@drawable/white_bg"
+            android:paddingVertical="10dp">
+            <ImageView
+                android:layout_height="20dp"
+                android:layout_width="20dp"
+                android:src="@drawable/c_info"
+                android:layout_weight="1"/>
+            <TextView
+                android:id="@+id/tv_lbl_show_info"
+                android:text="Show Course Information"
+                android:layout_weight="5"
+                />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tr_select_course"
+            android:background="@drawable/white_bg"
+            android:paddingVertical="10dp"
+            android:layout_marginVertical="10dp">
+            <ImageView
+                android:layout_height="20dp"
+                android:layout_width="20dp"
+                android:src="@drawable/c_edit"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/tv_lbl_select_course"
+                android:layout_weight="5"
+                android:text="Select Course" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tr_drop_course"
+            android:background="@drawable/white_bg"
+            android:paddingVertical="10dp"
+            android:layout_marginVertical="10dp">
+            <ImageView
+                android:layout_height="20dp"
+                android:layout_width="20dp"
+                android:src="@drawable/c_edit"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/tv_lbl_drop_course"
+                android:layout_weight="5"
+                android:text="Drop Course" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tr_override_course"
+            android:background="@drawable/white_bg"
+            android:paddingVertical="10dp"
+            android:layout_marginVertical="10dp">
+            <ImageView
+                android:layout_height="20dp"
+                android:layout_width="20dp"
+                android:src="@drawable/c_edit"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/tv_lbl_override_course"
+                android:layout_weight="5"
+                android:text="Override Course" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tr_unselect_course"
+            android:background="@drawable/white_bg"
+            android:paddingVertical="10dp"
+            android:layout_marginVertical="10dp">
+            <ImageView
+                android:layout_height="20dp"
+                android:layout_width="20dp"
+                android:src="@drawable/c_edit"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/tv_lbl_unselect_course"
+                android:layout_weight="5"
+                android:text="Unselect Course" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tr_waitinglist_course"
+            android:background="@drawable/white_bg"
+            android:paddingVertical="10dp"
+            android:layout_marginVertical="10dp">
+            <ImageView
+                android:layout_height="20dp"
+                android:layout_width="20dp"
+                android:src="@drawable/c_edit"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/tv_lbl_waitinglist_course"
+                android:layout_weight="5"
+                android:text="Add to Waiting List" />
+        </TableRow>
+    </TableLayout>
+</LinearLayout>
+

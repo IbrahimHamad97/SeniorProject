@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.MainActivity">
+
+    <Spinner
+        android:id="@+id/semester_spinner2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_course_reg"
+        android:layout_width="@dimen/mm_icon_size"
+        android:layout_height="@dimen/mm_icon_size"
+        android:background="@drawable/coursereg_icon"
+        android:onClick="openCourseRegistrationActivity"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.15" />
+
+    <Button
+        android:id="@+id/btn_my_sched"
+        android:layout_width="@dimen/mm_icon_size"
+        android:layout_height="@dimen/mm_icon_size"
+        android:layout_marginStart="32dp"
+        android:background="@drawable/mysched_icon"
+        android:onClick="openMyScheduleActivity"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_course_reg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/btn_course_reg"
+        app:layout_constraintTop_toTopOf="@+id/btn_course_reg" />
+
+    <Button
+        android:id="@+id/btn_course_manage"
+        android:layout_width="@dimen/mm_icon_size"
+        android:layout_height="@dimen/mm_icon_size"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/coursemanage_icon"
+        android:onClick="openCourseManagementActivity"
+        app:layout_constraintStart_toStartOf="@+id/btn_course_reg"
+        app:layout_constraintTop_toBottomOf="@+id/btn_course_reg" />
+
+    <Button
+        android:id="@+id/btn_waiting_list"
+        android:layout_width="@dimen/mm_icon_size"
+        android:layout_height="@dimen/mm_icon_size"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/waitinglist_icon"
+        android:onClick="openWaitingListActivity"
+        app:layout_constraintStart_toStartOf="@+id/btn_course_manage"
+        app:layout_constraintTop_toBottomOf="@+id/btn_course_manage" />
+
+    <Button
+        android:id="@+id/btn_mybanner"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/mybanner_thin_icon"
+        android:onClick="sendToMyBanner"
+        app:layout_constraintEnd_toEndOf="@+id/btn_view_holds"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btn_waiting_list"
+        app:layout_constraintTop_toBottomOf="@+id/btn_waiting_list" />
+
+    <Button
+        android:id="@+id/btn_my_info"
+        android:layout_width="@dimen/mm_icon_size"
+        android:layout_height="@dimen/mm_icon_size"
+        android:background="@drawable/myinfo_icon"
+        android:onClick="openStudentProfileActivity"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_course_manage"
+        app:layout_constraintStart_toStartOf="@+id/btn_my_sched"
+        app:layout_constraintTop_toTopOf="@+id/btn_course_manage" />
+
+    <Button
+        android:id="@+id/btn_view_holds"
+        android:layout_width="@dimen/mm_icon_size"
+        android:layout_height="@dimen/mm_icon_size"
+        android:background="@drawable/vh_icon"
+        android:onClick="openHoldsActivity"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_waiting_list"
+        app:layout_constraintStart_toStartOf="@+id/btn_my_info"
+        app:layout_constraintTop_toTopOf="@+id/btn_waiting_list" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
