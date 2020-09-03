@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">621166327226-b3fg0tq7q795jj6775mtk8jna2esnq8o.apps.googleusercontent.com</string>
+    <string name="firebase_database_url" translatable="false">https://course-registration-syst-496a3.firebaseio.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">621166327226</string>
+    <string name="google_api_key" translatable="false">AIzaSyBjGbAUuPCkBRnUdgjRlsaLpXsvZoHtf3c</string>
+    <string name="google_app_id" translatable="false">1:621166327226:android:a720abf044ff0da0889983</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyBjGbAUuPCkBRnUdgjRlsaLpXsvZoHtf3c</string>
+    <string name="google_storage_bucket" translatable="false">course-registration-syst-496a3.appspot.com</string>
+    <string name="project_id" translatable="false">course-registration-syst-496a3</string>
+</resources>

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "621166327226",
+    "firebase_url": "https://course-registration-syst-496a3.firebaseio.com",
+    "project_id": "course-registration-syst-496a3",
+    "storage_bucket": "course-registration-syst-496a3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:621166327226:android:a720abf044ff0da0889983",
+        "android_client_info": {
+          "package_name": "com.cmps312.courseregistration"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "621166327226-b3fg0tq7q795jj6775mtk8jna2esnq8o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBjGbAUuPCkBRnUdgjRlsaLpXsvZoHtf3c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "621166327226-b3fg0tq7q795jj6775mtk8jna2esnq8o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
